@@ -106,7 +106,8 @@ img {
 .price h3 {
   font-family: var(--primaryFont);
   color: var(--darkGrayishBlue);
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: normal;
   font-size: 14px;
   margin: 0 0 0 15px;
   text-decoration: line-through;
