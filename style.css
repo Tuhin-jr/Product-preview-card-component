@@ -103,7 +103,7 @@ img {
   color: var(--darkCyan);
   margin-bottom: 0;
 }
-.price h4 {
+.price h3 {
   font-family: var(--primaryFont);
   color: var(--darkGrayishBlue);
   font-weight: 400;
