@@ -1,0 +1,138 @@
+:root {
+  --primaryFont: 'Montserrat', sans-serif;
+  --secFont: 'Fraunces', system-ui;
+
+  --darkCyan: hsl(158, 36%, 37%);
+  --creamColor: hsl(30, 38%, 92%);
+  --veryDarkBlue: hsl(212, 21%, 14%);
+  --darkGrayishBlue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --activeColor: hsl(156, 42%, 18%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--primaryFont);
+  background-color: var(--creamColor);
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--secFont);
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+p {
+  font-family: var(--primaryFont);
+  margin-bottom: 15px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.card {
+  width: 600px;
+  display: flex;
+}
+.card-img {
+  flex-basis: 50%;
+}
+.desktop {
+  border-radius: 10px 0 0 10px;
+  display: block;
+}
+.mobile {
+  border-radius: 10px 10px 0 0;
+  display: none;
+}
+.card-body {
+  flex-basis: 50%;
+  background: var(--white);
+  padding: 32px;
+  border-radius: 0 10px 10px 0;
+}
+
+.card-body h4 {
+  font-family: var(--primaryFont);
+  color: var(--darkGrayishBlue);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+}
+.card-body h1 {
+  font-size: 32px;
+  line-height: 34px;
+  color: var(--veryDarkBlue);
+}
+.card-body p {
+  color: var(--darkGrayishBlue);
+  font-weight: 600;
+  line-height: 24px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px 0;
+}
+.price h3 {
+  font-size: 32px;
+  color: var(--darkCyan);
+}
+.price h6 {
+  font-family: var(--primaryFont);
+  color: var(--darkGrayishBlue);
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 15px;
+  text-decoration: line-through;
+}
+.button {
+  background: var(--darkCyan);
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 700;
+}
+.button:hover {
+  background-color: var(--activeColor);
+}
+.button img {
+  position: relative;
+  padding-right: 10px;
+  top: 3px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
